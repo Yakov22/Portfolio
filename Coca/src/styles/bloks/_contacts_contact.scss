@@ -1,0 +1,85 @@
+
+.contact {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: calc($ap * 100);
+  position: relative;
+  margin-bottom: calc($ap * 160);
+}
+
+.contact__img {
+  max-width: calc($ap * 987);
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  z-index: -1;
+}
+
+.contact__wrapper {
+  top: 0;
+  left: 0;
+  background-color: $white;
+  padding: calc($ap * 56) calc($ap * 48);
+  max-width: 608px;
+  border: 1px solid $grey-light;
+}
+
+.contact__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contct__desk {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: left;
+  color: $grey;
+  margin-bottom: 48px;
+}
+
+.contct__desk > span {
+  color: $blue;
+}
+
+.contact__names {
+  display: flex;
+  gap: calc($ap * 32);
+}
+
+.contact__name {
+  flex: 1 1 45%;
+}
+
+.contact__input {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #7e8391;
+  padding: 10px 14px;
+  margin: 6px 0 24px 0;
+  border: 1px solid $grey-light;
+  border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+  .contact__img {
+    display: none;
+  }
+  .contact__wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 458px) {
+  .contact__names {
+    flex-direction: column;
+    gap: 0;
+  }
+}

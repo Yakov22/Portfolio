@@ -1,0 +1,188 @@
+
+.header {
+  top: 0;
+  max-width: 1240px;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #7f95f9;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 200;
+  font-style: italic;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  margin-left: 15px;
+}
+
+.nav {
+  top: 0;
+  position: relative;
+  float: right;
+  width: fit-content;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.menu a {
+  display: block;
+  padding: 30px 10px;
+  color: #7f95f9;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: transparent;    
+}
+
+.hamb{
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 758px) {
+  .header {
+    z-index: 5;
+  }
+
+  .nav {
+    overflow: hidden;
+    max-height: 0;
+    width: 100%; 
+    height: 100%;
+    position: fixed;
+    background-color: #000415;
+    transition: max-height .5s ease-out;
+    z-index: 5;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .menu a:hover {
+    background-color: #000415;
+  }
+
+  .hamb {
+    display: block;
+    cursor: pointer;
+    float: right;
+    padding: 30px 20px;
+  }
+
+  .hamb-line {
+    background: #7f95f9;
+    display: block;
+    height: 3px;
+    position: relative;
+    width: 30px;
+    z-index: 10;
+  }
+
+  .hamb-line::before,
+  .hamb-line::after {
+    background: #7f95f9;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+
+  .hamb-line::before {
+    top: 7px;
+  }
+
+  .hamb-line::after {
+    top: -7px;
+  }
+
+/* Toggle menu icon */
+
+  .mobile-menu:checked ~ nav {
+    max-height: 100%;
+  }
+
+  .mobile-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+  }
+
+  .mobile-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+  }
+
+  .mobile-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+  }
+}
+
+.menu-link {
+  position: relative;
+}
+
+.menu-link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #7f95f9;
+  bottom: 15px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.whatsapp-link {
+  position: relative;
+}
+
+.menu-whatsapp {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.menu-whatsapp:hover {
+  opacity: 1;
+}
+
+.menu-whatsapp:hover > img {
+  box-shadow: 0 0 15px #7f95f9;
+}
+
+
+

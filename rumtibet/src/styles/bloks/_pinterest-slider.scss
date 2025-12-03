@@ -1,0 +1,50 @@
+.pinterest-slider {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.swiper-slide > img {
+  height: auto;
+  border-radius: 6px;
+}
+
+.swiper-button-prev {
+  color: #F3F5F4;
+}
+
+.swiper-button-next {
+  color: #F3F5F4;
+}
+
+.pinterest-slider .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  background-color: #555;
+}
+
+.pinterest-slider .swiper-pagination-fraction {
+  font-size: 16px;
+  color: #1A3E3E; 
+}
+
+.pinterest-slider .swiper-pagination-progressbar-fill {
+  background-color: #F2BE22;
+}
+
+.pinterest-slider .swiper-scrollbar {
+  cursor: pointer;
+  background-color: palevioletred;
+}
+
+@media (max-width: 578px) {
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+}

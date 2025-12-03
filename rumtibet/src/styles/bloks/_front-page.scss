@@ -1,0 +1,204 @@
+
+.front-page {
+  background-image: url(../img/bg_front_pade.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -90px;
+  padding-bottom: 82px;
+}
+
+.front-page__title {
+  font-family: "Next art";
+  font-size: 50px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+  color: var(--white);
+  margin-bottom: 41px;
+  padding-top: 280px;
+}
+
+.front-page__form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 42px;
+  gap: 15px;
+  background-color: rgba(253, 253, 253, 0.2);
+  border-radius: 10px;
+}
+
+.select,
+::picker(select) {
+  appearance: base-select;
+}
+
+.front-page__form-item {
+  width: 270px;
+}
+
+.select {
+  border: 1px solid #FDFDFD;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FDFDFD;
+  border-radius: 8px;
+  appearance: none;
+  background-image: url(../img/svg/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  transition: 0.4s;
+  z-index: 50;
+}
+
+.select:hover,
+.select:focus {
+  background-color: rgba(253, 253, 253, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+/* Стилизация выпадающего окна */
+::picker(select) {
+  border: none;
+}
+
+option {
+  border: 1px solid #dddddd;
+  background: hsla(180, 40%, 17%, 0.1);
+  color: #144f4f;
+  padding: 10px;
+  transition: 0.4s;
+}
+
+/* Скругление option - работает не во всех браузерах */
+option:first-of-type {
+  border-radius: 8px 8px 0 0;
+}
+
+option:last-of-type {
+  border-radius: 0 0 8px 8px;
+}
+
+option:not(option:last-of-type) {
+  border-bottom: none;
+}
+
+/* Меняем цвет у нечетных строк */
+option:nth-of-type(odd) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Подсветка */
+option:hover,
+option:focus {
+  background: hsla(180, 41%, 17%, 0.4);
+}
+
+.front-page__form-prompt {
+  font-size: 14px;
+  font-weight: 400;
+  color: #FDFDFD;
+  margin-left: 8px;
+}
+
+.front-page__input-date {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  border-radius: 8px;
+  padding: 14px 14px 14px 14px;
+  width: 100%;
+  height: 52px;
+  color: var(--white);
+  transition: 0.4s;
+  font-size: 16px;
+  font-weight: 700;
+  background-image: url(../img/svg/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: 94%;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.front-page__input-date[type=text]:hover {
+  border: 1px solid #FDFDFD;
+}
+
+.front-page__input-date:hover,
+.front-page__input-date:focus {
+  background-color: rgba(253, 253, 253, 0.3);
+  border: 1px solid #FDFDFD;
+  outline: none;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #fcfcfc;
+}
+
+.front-page__input-date[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.front-page__form-btn {
+  background-color: var(--white);
+  color: var(--green);
+  border: 1px solid var(--green);
+  width: 213px;
+  height: 52px;
+  border-radius: 8px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.front-page__form-btn:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+@media (max-width: 1210px) {
+  .front-page__form-wrapper {
+    justify-content: space-around;
+    height: 245px;
+  }
+  .front-page__form-item {
+    width: 33.333%;
+  }
+  .front-page__form-btn {
+    position: absolute;
+    width: 270px;
+    margin: 110px auto 0 auto;
+  }
+}
+@media (max-width: 1010px) {
+  .front-page__title {
+    font-size: 39px;
+  }
+}
+@media (max-width: 768px) {
+  .front-page__title {
+    font-size: 28px;
+  }
+  .front-page__form-item {
+    display: none;
+  }
+  .front-page__form-btn {
+    position: static;
+    margin: 0 auto 0 0;
+  }
+  .front-page__form-wrapper {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin-bottom: 28px;
+  }
+}
+@media (max-width: 360px) {
+  .front-page__title {
+    font-size: 21px;
+  }
+}

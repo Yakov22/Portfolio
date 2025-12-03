@@ -1,0 +1,45 @@
+
+@font-face {
+  font-family: "Next art";
+  src: url("../fonts/NEXT ART_Bold.otf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --white: #FDFDFD;
+  --green: #1A3E3E;
+  --orange: #F2BE22;
+  --black: #18121e;
+  --grey: #F3F5F4;
+  --maket: min(100vw, 1180px);
+  --recount: calc((var(--maket)) / 1180);
+}
+
+body {
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+  max-width: 1610px;
+  margin: 0 auto;
+}
+
+.body_hide {
+  opacity: 0;
+  transition: 0.9s opacity ease-in-out;
+}
+
+.body_visible {
+  opacity: 1;
+}
+
+.container {
+  max-width: 1210px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+

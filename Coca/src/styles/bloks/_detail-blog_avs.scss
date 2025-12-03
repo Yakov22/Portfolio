@@ -1,0 +1,50 @@
+.avs {
+  max-width: 970px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.avs__title {
+  margin-bottom: calc($ap * 80);
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: calc($ap * 24);
+}
+
+.author__wrapper {
+  display: flex;
+
+}
+.ams__data-avatar {
+  max-width: max(32px, calc($ap * 56));
+  max-height: max(32px, calc($ap * 56));
+  margin-right: calc($ap * 24);
+}
+
+.avs__data-name {
+  font-weight: 600;
+  font-size:  max(13px, calc($ap * 18));
+  line-height: 1.44;
+}
+
+.avs__data-data {
+  margin-top: auto;
+}
+
+.avs__img {
+  max-width: 100%;
+  margin-bottom: calc($ap * 80);
+}
+
+.avs__desc {
+  font-weight: 400;
+  font-size:  max(13px, calc($ap * 18));
+  line-height: 1.78;
+  margin-bottom: calc($ap * 56);
+}
+

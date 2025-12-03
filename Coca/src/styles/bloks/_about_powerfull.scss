@@ -1,0 +1,36 @@
+.powerfull {
+}
+.container {
+}
+.powerfull__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: calc($ap * 85) 0;
+}
+.powerfull__title {
+  width: calc($ap * 480);
+}
+.title-h2 {
+}
+.powerfull__desk {
+  width: calc($ap * 522);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc($ap * 24);
+  line-height: 1.5;
+  text-align: left;
+}
+@media (max-width: 758px) {
+  .powerfull__wrapper {
+    flex-direction: column;
+    margin: 24px 0;
+  }
+  .powerfull__title {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .powerfull__desk {
+    width: 100%;
+  }
+}

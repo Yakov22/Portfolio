@@ -1,0 +1,62 @@
+.coca-help {
+  background-color: $black;
+  color: $white;
+  padding: calc($ap * 100) 0;
+  margin-bottom: calc($ap * 160);
+}
+
+.coca-help__title {
+  width: calc($ap * 816);
+  text-align: left;
+  margin-bottom: calc($ap * 24);
+  animation: slip-r 1s forwards;
+}
+
+.coca-cola__desk {
+  width: calc($ap * 660);
+  text-align: left;
+  margin-bottom: calc($ap * 80);
+  animation: slip-r 1s forwards;
+}
+
+.coca-help__grid-wrapper {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  column-gap: calc($ap * 245);
+  row-gap: calc($ap * 56);
+}
+
+.cola-help__card-img {
+  width: calc($ap * 40);
+  margin-bottom: calc($ap * 24);
+}
+
+.coca-help__card-titke {
+  width: calc($ap * 249);
+  text-align: left;
+  margin-bottom: calc($ap * 24);
+}
+
+.coca-help__card-desk {
+  // width: calc($ap * 446);
+  text-align: left;
+}
+
+.coca-help__grid-container {
+  animation: slip-r 1s forwards;
+}
+
+@media (max-width: 440px) {
+  .coca-help__title {
+    width: 100%;
+  }
+  .coca-help__card-titke {
+    width: 100%;
+  }
+  .coca-cola__desk {
+    width: 100%;
+  }
+  .coca-help__grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

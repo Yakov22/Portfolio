@@ -1,0 +1,134 @@
+
+root {
+  --um: clamp(0.4px, calc(100vw / 1570), 1px);
+  --color-orange: #e8594e;
+  --color-blue: #73AFBA;
+  --color-hover: #0a798d;
+  --color-black: #1c2e3d;
+}
+
+/*============== Стили свайпера ===============*/
+video {
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.swiper-container-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+.swiper-wrapper-1 {
+  position: relative;
+  bottom: calc(var(--um) * 120);
+  right: 0;
+  aspect-ratio: 502 / 400;
+}
+
+.swiper-buttons-1 {
+  min-height: calc(var(--um) * 120);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #73AFBA;
+}
+
+.swiper-button-prev-1 {
+  padding: 0 0 0 50px;
+}
+
+.swiper-button-next-1 {
+  padding: 0 50px 0 0;
+}
+
+/* ------------------------ */
+
+
+.sw-container-2 {
+  overflow: hidden;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.swiper-scrollbar {
+  margin-bottom: calc(var(--um) * 120);
+}
+
+.sw__buttons {
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+  padding-top: calc(var(--um) * 70);
+}
+
+.swiper-button-prev-2 {
+  width: calc(var(--um) * 40);
+  position: relative;
+  color: #73AFBA;
+  transition: color 0.4s ease;
+}
+
+.swiper-button-prev-2:hover {
+  color: var(--color-orange);
+}
+
+.swiper-button-next-2 {
+  width: calc(var(--um) * 40);
+  position: relative;
+  color: #73AFBA;
+  transition: color 0.4s ease;
+}
+
+.swiper-button-next-2:hover {
+  color: var(--color-orange);
+}
+
+.swiper-slide-2 {
+  aspect-ratio: 1035 / 669;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.swiper-slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-container .swiper-pagination-fraction {
+  font-size: max(12px, calc(var(--um) * 20));
+  color: #fff; 
+  margin-bottom: calc(var(--um) * 120 / 2 - 14px);
+}
+
+.swiper-container .swiper-scrollbar {
+  cursor: pointer;
+  background-color: palevioletred;
+}
+
+@media (max-width: 1090px) {
+  .swiper-wrapper-1 {
+    position: relative;
+  }
+}
+
+@media (max-width: 580px) {
+  .title-page__slider {
+    width: 100%;
+    height: calc(var(--um) * 400);
+  }
+}
+
+@media (max-width: 390px) {
+  .title-page__form {
+    width: 300px;
+  }
+}
+

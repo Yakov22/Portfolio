@@ -1,0 +1,113 @@
+
+.questions__accordion {
+  max-width: 1114px;
+  margin: 0 auto;
+  margin-bottom: 160px;
+}
+
+.questions__title {
+  margin-bottom: calc($ap * 24);
+  text-align: center;
+}
+
+.questions__desk {
+  margin-bottom: calc($ap * 80);
+  text-align: center;
+}
+
+.accord {
+  display: none;
+}
+
+.div-ac {
+  width: 100%;
+  height: 70px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  cursor: pointer;
+  border-bottom: 1px solid $grey-light;
+}
+
+.ac-top {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.ac-top > h3 {
+  font-weight: 600;
+  font-size: max(16px, calc($ap * 24));
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.answer {
+  font-weight: 500;
+  font-size:  max(14px, calc($ap * 18));
+  line-height: 1.7;
+  text-align: left;
+  color: #7e8391;
+  max-width: 641px;
+  position: relative;
+}
+
+.plus-ac {
+  min-width: 15px;
+  height: 2px;
+  background-color: #1d1e25;
+  margin-top: 10px;
+  margin-right: 10px;
+  position: relative
+}
+
+.plus-ac::before {
+  content: '';
+  min-width: 15px;
+  height: 2px;
+  background-color: #1d1e25;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+  transition: all 0.4s ease;
+}
+
+.accord1:checked ~ label > .div-ac1 {
+  height: 185px;
+  cursor: auto;
+}
+.accord2:checked ~ label > .div-ac2 {
+  height: 185px;
+  cursor: auto;
+}
+.accord3:checked ~ label > .div-ac3 {
+  height: 185px;
+  cursor: auto;
+}
+.accord4:checked ~ label > .div-ac4 {
+  height: 185px;
+  cursor: auto;
+}
+.accord5:checked ~ label > .div-ac5 {
+  height: 185px;
+  cursor: auto;
+}
+.accord1:checked ~ label > .div-ac1 > .ac-top > .plus-ac::before {
+  opacity: 0;
+}
+.accord2:checked ~ label > .div-ac2 > .ac-top > .plus-ac::before {
+  opacity: 0;
+}
+.accord3:checked ~ label > .div-ac3 > .ac-top > .plus-ac::before {
+  opacity: 0;
+}
+.accord4:checked ~ label > .div-ac4 > .ac-top > .plus-ac::before {
+  opacity: 0;
+}
+.accord5:checked ~ label > .div-ac5 > .ac-top > .plus-ac::before {
+  opacity: 0;
+}
+
+

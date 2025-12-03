@@ -1,0 +1,137 @@
+
+.blogs {
+  background-color: var(--grey);
+  text-align: center;
+  padding-top: 80px;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+.blogs_subtitle {
+  margin-bottom: 8px;
+}
+
+.blogs__title {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.blogs__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.blogs__card {
+  border-radius: 10px;
+  display: flex;
+  gap: 24px;
+  background-color: var(--white);
+  box-shadow: 0px 0px 15px rgba(24, 18, 30, 0.12);
+  padding: 16px;
+  cursor: pointer;
+}
+
+.blog__img {
+  border-radius: 6px;
+}
+
+.blogs__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  padding: 16px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blogs__card-title {
+  font-size: 24px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.blogs__card-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: ellipsis;
+  margin-bottom: auto;
+}
+
+.blogs__date {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: var(--orange);
+}
+
+.blogs__card-futter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blogs__link {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  position: relative;
+}
+
+.blogs__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  bottom: -2px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.blogs__card:hover .blogs__link::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.blogs__button {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+  .blogs__cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .blogs__card {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .blog__img {
+    width: 100%;
+  }
+  .blogs__content {
+    gap: 16px;
+    padding: 0;
+  }
+  .blogs__card-title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .blogs__card {
+    width: 285px;
+  }
+  .blogs__cards {
+    overflow: scroll;
+  }
+}

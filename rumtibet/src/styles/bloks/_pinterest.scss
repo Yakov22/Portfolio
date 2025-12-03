@@ -1,0 +1,69 @@
+
+.pinterest {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.pinterest__subtitle {
+  margin-bottom: 8px;
+}
+
+.pinterest__tile {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.pinterest__imeges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-height: 520px;
+  width: 1182px;
+  margin-bottom: 50px;
+}
+
+.pinterest__img {
+  display: block;
+  position: relative;
+  object-fit: cover;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+}
+
+.pinterest__img:hover {
+  cursor: pointer;
+}
+
+.svg-before {
+  position: relative;
+}
+
+.svg-before:hover::before {
+  content: url(../img/pinterest/zum-in.svg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.pinterest_btn {
+  display: inline;
+}
+
+@media (max-width: 1210px) {
+  .pinterest__imeges {
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 580px) {
+  .pinterest__img {
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+  }
+}

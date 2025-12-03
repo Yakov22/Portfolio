@@ -1,0 +1,55 @@
+
+.title-page__title-wrapper {
+  margin: 30px auto;
+  display: inline-block;
+  position: relative;
+}
+
+.title-page__title {
+  font-size: calc($ap * 120);
+  font-weight: 100;
+  color: #000415;
+  position: absolute;
+  transform: translate(calc(-50% - 1px), 1px); 
+  animation: fog 3s;
+}
+
+.title-page__title::after {
+  content: 'portfolio';
+  text-transform: uppercase;
+  color: #7f95f9;
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  animation: rotating-shadow 15s linear  infinite,  fog 4s;
+}
+
+@keyframes rotating-shadow {
+  0% {
+  transform: translate(calc(-50% + 1px), 1px);
+  }
+  12% {
+  transform: translate(calc(-50% + 1px), 0px);
+  }
+  24% {
+  transform: translate(calc(-50% + 1px), -1px);
+  }
+  36% {
+  transform: translate(calc(-50% + 0px), -1px);
+  }
+  48% {
+  transform: translate(calc(-50% - 1px), -1px);
+  }
+  60% {
+  transform: translate(calc(-50% - 1px), -0px);
+  }
+  72% {
+  transform: translate(calc(-50% - 1px), 1px);
+  }
+  84% {
+  transform: translate(calc(-50% + 0px), 1px);
+  }
+  100% {
+  transform: translate(calc(-50% + 1px), 1px);
+  }
+}

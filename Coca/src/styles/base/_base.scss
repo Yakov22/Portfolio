@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  font-family: $font-main;
+  background-color: #fff;
+  color: $black;
+  font-size: 18px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  color: $black;
+  cursor: pointer;
+}
+
+.header__nav-link.active {
+  color: #f00;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.body_hide {
+  opacity: 0;
+  transition: 0.9s opacity ease-in-out;
+}
+
+.body_visible {
+  opacity: 1;
+}
+
+.button {
+  padding: calc($ap * 16) calc($ap * 44);
+  border-radius: 30px;
+  background-color: $black;
+  color: $white;
+  font-weight: 700;
+  white-space: nowrap;
+  font-size: max(10px, calc($ap * 16));
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: $white;
+  color: $black;
+  outline: 1px solid $grey-light;
+}
+
+
+.line2 {
+  border: 1px solid #ededed;
+  width: 100%;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.title-72 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc($ap * 72);
+  line-height: 1.2;
+  letter-spacing: -3px;
+  text-align: left;
+  color: #1d1e25;
+}
+
+.title-h2 {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc($ap * 56);
+  line-height: 1.2;
+  letter-spacing: -2px;
+}
+
+.title-h3 {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc($ap * 32);
+  line-height: 1.31;
+  letter-spacing: -1px;
+}
+
+.desk-p18 {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: max(13px, calc($ap * 18));
+  line-height: 1.5;
+  color: $grey;
+}
+
+.desk-p16 {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: max(12px, calc($ap * 16));
+  line-height: 1.62;
+  color: #7e8391;
+}
+
+.font-24 {
+  font-weight: 700;
+  font-size: calc($ap * 24);
+  line-height: 1.33;
+}

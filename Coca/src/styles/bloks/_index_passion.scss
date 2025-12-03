@@ -1,0 +1,80 @@
+.passion {
+  margin-bottom: calc($ap * 94);
+}
+
+.passion__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc($ap * 58);
+}
+
+.passion__container-img {
+  position: relative;
+  max-width: calc($ap * 585);
+}
+
+.passion__img1 {
+  max-width: 100%;
+}
+
+.passion__img2 {
+  max-width: calc($ap * 290);
+  position: absolute;
+  bottom: calc($ap * 40);
+  right: calc($ap * 36);
+}
+
+.passion__container-text {
+ max-width: calc($ap * 557);
+}
+
+.passion__title {
+  margin-bottom: calc($ap * 24);
+}
+
+.passion__desc {
+  line-height: 1.77;
+  color: $grey;
+  margin-bottom: calc($ap * 40);
+  max-width: calc($ap * 393);
+}
+
+.passion__item {
+  line-height: 1.77;
+  color: $black;
+  margin-left: calc($ap * 50);
+  max-width: calc($ap * 393);
+  position: relative;
+}
+
+.passion__item::before {
+  content: url(../img/passion/checked.svg);
+  width: calc($ap * 18);
+  position: absolute;
+  top: 50%;
+  left: calc($ap * -50);
+  transform: translate(0, -40%);
+}
+
+.passion__item + .passion__item {
+  margin-top: calc($ap * 32);
+}
+
+@media (max-width: 758px) {
+  .passion__wrapper {
+    flex-direction: column;
+  }
+  .passion__container-img {
+    max-width: 100%;
+  }
+  .passion__container-text {
+    max-width: 100%;
+  }
+  .passion__desc {
+    max-width: 100%;
+  }
+  .passion__item {
+    max-width: 100%;
+  }
+}

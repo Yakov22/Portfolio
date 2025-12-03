@@ -1,0 +1,120 @@
+.customer {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: calc($ap * 160);
+}
+
+.castomer__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: calc($ap * 48);
+}
+
+.customer__title {
+  max-width: calc($ap * 530);
+}
+
+.customer__desk {
+  max-width: calc($ap * 379);
+}
+
+.customer__decor {
+  max-width: calc($ap * 115);
+}
+
+.customer__card {
+  max-width: 100%;
+  padding: 0 15px;
+  flex-shrink: 0;
+}
+
+.customer__reting {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
+.customer__reting-stars {
+  max-width: calc($ap * 164);
+  height: 15px;
+  margin-right: 8px;
+}
+
+.customer__reting-number {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+.customer__comment {
+  font-weight: 500;
+  font-size: calc($ap * 40);
+  line-height: 1.3;
+  letter-spacing: -1px;
+  text-align: left;
+  margin-bottom: calc($ap * 40);
+}
+
+.customer__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer__user {
+  display: flex;
+  align-items: center;
+}
+
+.customer__user-avater {
+  margin-right: calc($ap * 24);
+  max-width: calc($ap * 56);
+}
+
+.customer__user-name {
+  font-weight: 600;
+  font-size: calc($ap * 18);
+  line-height: 1.444;
+  text-align: left;
+}
+
+.customer__user-post {
+  font-weight: 500;
+  font-size: calc($ap * 16);
+  line-height: 1.625;
+  text-align: left;
+  color: $grey;
+}
+
+.customer__buttons {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+}
+
+.customer__button-left > img {
+  width: max(28px, calc($ap * 50));
+  cursor: pointer;
+}
+
+.customer__button-right > img{
+  width: max(28px, calc($ap * 50));
+  cursor: pointer;
+}
+
+//-------------------------------------
+
+.castomer__slider-wrapper {
+  overflow: hidden;
+  max-width: calc($ap * 898);
+  margin: 0 auto;
+}
+
+.castomer__slider {
+  display: flex;
+  transition: transform 0.8s ease;
+}
